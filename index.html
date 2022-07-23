@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Omar</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Omar</a>
+            </div>
+            <nav>
+                <ul>
+                    <li style="--order: 0rem"><a href="">Home</a></li>
+                    <li style="--order: 1rem"><a href="#about">About</a></li>
+                    <li style="--order: 2rem"><a href="#tech">Technologies</a></li>
+                    <li style="--order: 3rem"><a href="#portfolio">Portfolio</a></li>
+                    <li style="--order: 4rem"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="info">
+                <p>
+                    Hi, my name is <span>Omar</span> and welcome to my Web Portfolio.
+                    Feel free to explore the site and view my <a href="#portfolio">portfolio</a>.
+                </p>
+                <img src="./images/features.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="tech" id="tech">
+        <div class="container">
+            <h2>Technologies</h2>
+            <ul>
+                <li data-size="80%" style="--i: 80%">HTML</li>
+                <li data-size="80%" style="--i: 80%">CSS</li>
+                <li data-size="70%" style="--i: 70%">JS<span style="--i: 50%" data-size="50%">React</span></li>
+                <li data-size="55%" style="--i: 55%">Python/Django</li>
+                <li data-size="70%" style="--i: 70%">Git/Github</li>
+                <li data-size="75%" style="--i: 75%">Api</li>
+            </ul>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="view">
+                <div class="item" title="youtube UI"><img src="./images/youtube.png" alt=""><a href="https://omarjouied.github.io/youtube/" target="_blank">live</a><a href="https://github.com/OmarJouied/youtube" target="_blank">source code</a></div>
+                <div class="item" title="sample design"><img src="./images/elzero.png" alt=""><a href="https://omarjouied.github.io/elzero/" target="_blank">live</a><a href="https://github.com/OmarJouied/elzero" target="_blank">source code</a></div>
+                <div class="item" title="sample design"><img src="./images/elzero.png" alt=""><a href="https://omarjouied.github.io/elzero/" target="_blank">live</a><a href="https://github.com/OmarJouied/elzero" target="_blank">source code</a></div>
+                <div class="item" title="sample design"><img src="./images/elzero.png" alt=""><a href="https://omarjouied.github.io/elzero/" target="_blank">live</a><a href="https://github.com/OmarJouied/elzero" target="_blank">source code</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="item">
+                <span>+212 165-665-53</span>
+                <a href="mailto:omar.jouied@etu.uae.ac.ma">omar.jouied@etu.uae.ac.ma</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="item">&copy;<div id="year"></div><a href="">Omar</a>All Right Reserved.</div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
