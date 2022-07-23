@@ -173,13 +173,12 @@ header ul a {
 .portfolio .view {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    gap: 0 2rem;
+    gap: 1rem 2.5rem;
     padding: 2rem 0;
 }
 .portfolio .item {
     position: relative;
     left: 0;
-    height: 12rem;
 }
 .portfolio a {
     display: inline-block;
@@ -205,6 +204,22 @@ header ul a {
 }
 .portfolio img {
     max-width: 100%;
+}
+.portfolio .container > a {
+    all: unset;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 700;
+    padding: .5em 1em;
+    color: #fff;
+    border-radius: .25rem;
+    cursor: pointer;
+    background-color: var(--clr);
+    transition: .3s;
+}
+.portfolio .container > a:hover {
+    background-color: hsl(181, 100%, 28%);
 }
 /* portfolio */
 /* contact */
@@ -241,6 +256,9 @@ footer a {
     .about img {
         margin-left: 1rem;
     }
+    .portfolio .view {
+        gap: 1rem 2rem;
+    }
 }
 @media (max-width: 766px) {
     .container {
@@ -274,8 +292,8 @@ footer a {
     .tech ul {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
-    .portfolio .view {
-        row-gap: 3.5rem;
+    .portfolio .item {
+        height: unset;
     }
 }
 @media (max-width: 564px) {
@@ -360,7 +378,7 @@ footer a {
         gap: 2rem;
     }
     .portfolio .view {
-        row-gap: 0;
+        gap: 0 2rem;
         padding-bottom: 0;
     }
     .portfolio .item {
