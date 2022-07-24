@@ -130,7 +130,6 @@ header ul a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     margin: 6rem 0;
-    justify-content: center;
     gap: 2rem;
 }
 .tech li {
@@ -247,6 +246,13 @@ footer .item {
 }
 footer a {
     font-weight: 600;
+}
+footer .item:first-child {
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+footer i {
+    font-size: 2em;
 }
 /* footer */
 @media (max-width: 991px) {
