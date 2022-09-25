@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: url(./images/background.jpg);
+    background-image: url(../images/background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,7 +32,7 @@ a {
 }
 .container {
     background-color: var(--back);
-    width: 992px;
+    max-width: 992px;
     margin: auto;
     padding: 1.75rem var(--padding);
     position: relative;
@@ -257,7 +257,7 @@ footer i {
 /* footer */
 @media (max-width: 991px) {
     .container {
-        width: 767px;
+        max-width: 766px;
     }
     .about img {
         margin-left: 1rem;
@@ -266,9 +266,9 @@ footer i {
         gap: 1rem 2rem;
     }
 }
-@media (max-width: 766px) {
+@media (max-width: 767px) {
     .container {
-        width: 565px;
+        max-width: 564px;
     }
     header .container {
         flex-direction: column;
@@ -302,12 +302,12 @@ footer i {
         height: unset;
     }
 }
-@media (max-width: 564px) {
+@media (max-width: 565px) {
     :root {
         --padding: 1rem;
     }
     .container {
-        width: 320px;
+        max-width: 320px;
     }
     header ul {
         width: 3rem;
@@ -386,6 +386,7 @@ footer i {
     .portfolio .view {
         gap: 0 2rem;
         padding-bottom: 0;
+        grid-template-columns: 1fr;
     }
     .portfolio .item {
         height: 10rem;
@@ -393,5 +394,6 @@ footer i {
     .contact a {
         text-decoration: revert;
         color: blue;
+        font-size: 100%;
     }
 }
